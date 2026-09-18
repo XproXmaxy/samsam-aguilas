@@ -1,0 +1,416 @@
+```html
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAMSAM · Bar Restaurante · Águilas</title>
+<style>
+:root{--bg:#f7f4ee;--paper:#fff;--ink:#171717;--muted:#777;--accent:#b46b2c;--line:#e9e2d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:#171717;color:#fff;padding:34px 20px 28px;position:sticky;top:0;z-index:5;box-shadow:0 4px 25px #0002}
+.brand{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:30px;font-weight:950;letter-spacing:.14em}.place{font-size:13px;color:#bbb}
+nav{max-width:1100px;margin:20px auto 0;display:flex;gap:9px;overflow:auto;padding-bottom:2px}
+nav a{white-space:nowrap;color:#ddd;text-decoration:none;border:1px solid #444;padding:9px 14px;border-radius:999px;font-size:13px}
+nav a:hover{background:#fff;color:#111}
+.hero{max-width:1100px;margin:0 auto;padding:55px 20px 30px;text-align:center}.hero h1{font-size:clamp(42px,8vw,76px);margin:0}.hero p{color:var(--muted);font-size:17px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px 60px}.section{margin:48px 0}.section h2{font-size:30px;margin:0 0 8px}.desc{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 7px 25px #00000008}
+.item{display:flex;justify-content:space-between;gap:16px;border-bottom:1px dashed var(--line);padding:11px 0}.item:last-child{border:0}.name{font-weight:700}.info{color:var(--muted);font-size:13px;margin-top:4px}.price{font-weight:850;white-space:nowrap;color:var(--accent)}
+.feature{border:2px solid var(--accent)}.feature .name{font-size:19px}
+.qrbox{text-align:center;background:#171717;color:white;border-radius:24px;padding:32px}.qrbox img{width:190px;background:white;padding:10px;border-radius:15px}.qrbox p{color:#bbb}
+footer{text-align:center;padding:35px;color:#888;font-size:13px}
+@media(max-width:600px){header{padding:22px 14px 18px}.logo{font-size:24px}.hero{padding-top:35px}.wrap{padding:0 14px 45px}.section{margin:38px 0}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">SAMSAM</div>
+    <div class="place">BAR · RESTAURANTE · ÁGUILAS</div>
+  </div>
+
+  <nav>
+    <a href="#cafe">☕ Café & bebidas</a>
+    <a href="#desayuno">🥐 Desayunos</a>
+    <a href="#tapas">🍴 Tapas</a>
+    <a href="#pizza">🍕 Pizza</a>
+    <a href="#platos">🍽️ Platos</a>
+    <a href="#burgers">🍔 Hamburguesas</a>
+    <a href="#wraps">🌯 Wraps</a>
+    <a href="#bocadillos">🥖 Bocadillos</a>
+    <a href="#postres">🍰 Postres</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>La carta</h1>
+  <p>
+</div>
+
+<main class="wrap">
+
+<section id="cafe" class="section">
+  <h2>☕ Café, té y bebidas</h2>
+  <p class="desc">Cafés, refrescos, zumos y otras bebidas.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="item"><span class="name">Leche especial(almendra,soja,sin lactosa)</span><span class="price">0,20 €</span></div>
+      <div class="item"><span class="name">Solo / Espresso</span><span class="price">1,30 €</span></div>
+      <div class="item"><span class="name">Americano</span><span class="price">1,30 €</span></div>
+      <div class="item"><span class="name">Cortado</span><span class="price">1,30 €</span></div>
+      <div class="item"><span class="name">Café con leche</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Manchado</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Bombón</span><span class="price">1,60 €</span></div>
+      <div class="item"><span class="name">Leche manchada</span><span class="price">1,60 €</span></div>
+      <div class="item"><span class="name">Dos leches</span><span class="price">1,80 €</span></div>
+      <div class="item"><span class="name">Té / Infusión</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Cola Cao</span><span class="price">1,80 €</span></div>
+      <div class="item"><span class="name">Cappuccino</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Café con leche XL</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Carajillo</span><span class="price">1,80 €</span></div>
+      <div class="item"><span class="name">Belmonte</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Café frappé</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Café asiático</span><span class="price">3,60 €</span></div>
+    </div>
+
+    <div class="card">
+      <div class="item"><span class="name">Agua 50 cl</span><span class="price">1,30 €</span></div>
+      <div class="item"><span class="name">Agua 1,5 L</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Agua con gas</span><span class="price">2,20 €</span></div>
+      <div class="item"><span class="name">Coca Cola</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Fanta Naranja / Limón</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Sprite</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Nestea</span><span class="price">2,20 €</span></div>
+      <div class="item"><span class="name">Aquarius</span><span class="price">2,20 €</span></div>
+      <div class="item"><span class="name">Bitter KAS</span><span class="price">2,20 €</span></div>
+      <div class="item"><span class="name">Tónica</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Cholek</span><span class="price">2,00 €</span></div>
+      <div class="item"><span class="name">Zumo</span><span class="price">1,90 €</span></div>
+      <div class="item"><span class="name">Zumo naranja natural · S</span><span class="price">1,90 €</span></div>
+      <div class="item"><span class="name">Zumo naranja natural · L</span><span class="price">3,00 €</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="desayuno" class="section">
+  <h2>🥐 Desayunos</h2>
+
+  <div class="grid">
+
+    <div class="card feature">
+      <div class="item">
+        <span class="name">Español</span>
+        <span class="info">Tostada con tomate o mermelada + café + zumo de naranja</span>
+        <span class="price">3,90 €</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item">
+        <span class="name">Francés</span>
+        <span class="info">Croissant / Napolitana + café + zumo de naranja</span>
+        <span class="price">4,20 €</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item">
+        <span class="name">Inglés</span>
+        <span class="info">2 huevos, bacon, pan + café + zumo de naranja</span>
+        <span class="price">6,50 €</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>🍹 Smoothies & cócteles</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="item"><span class="name">Pineapple Sunset</span><span class="info">Fresa · Piña · Naranja</span><span class="price">5,00 €</span></div>
+      <div class="item"><span class="name">Tropical Heaven</span><span class="info">Mango · Piña · Banana</span><span class="price">5,00 €</span></div>
+      <div class="item"><span class="name">Vitality</span><span class="info">Banana · Fresa · Naranja</span><span class="price">5,00 €</span></div>
+      <div class="item"><span class="name">Blackberry Bliss</span><span class="info">Fresa · Mora · Frambuesa · Naranja</span><span class="price">5,00 €</span></div>
+      <div class="item"><span class="name">Purify</span><span class="info">Frambuesa · Mango · Manzana</span><span class="price">5,00 €</span></div>
+    </div>
+
+    <div class="card">
+      <div class="item"><span class="name">Mojito</span><span class="info">Ron · Menta · Limón</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Cuba Libre</span><span class="info">Ron · Coca · Limón</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Spritz</span><span class="info">Con Aperol</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Gin Tonic</span><span class="info">Gin · Tónica</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Piña Colada</span><span class="info">Ron · Coco · Piña</span><span class="price">6 €</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="tapas">
+  <h2>🍴 Tapas</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="item"><span class="name">Tortilla · Pincho</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Pan con alioli</span><span class="price">2 €</span></div>
+      <div class="item"><span class="name">Marinera</span><span class="price">2 €</span></div>
+      <div class="item"><span class="name">Ensaladilla rusa</span><span class="price">4,50 €</span></div>
+      <div class="item"><span class="name">Boquerones · 6 u.</span><span class="price">3,50 €</span></div>
+      <div class="item"><span class="name">Jamón serrano</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Queso</span><span class="price">4,50 €</span></div>
+      <div class="item"><span class="name">Tortitas de camarones · 4 u.</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Calamares a la romana · 8 u.</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Gambas · 4 u.</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Nuggets · 5 u.</span><span class="price">4 €</span></div>
+      <div class="item"><span class="name">Alitas de pollo · 4 u.</span><span class="price">4 €</span></div>
+      <div class="item"><span class="name">Croquetas de jamón ibérico · 2 u.</span><span class="price">4,50 €</span></div>
+      <div class="item"><span class="name">Gambas rojas · 2 u.</span><span class="price">4,50 €</span></div>
+      <div class="item"><span class="name">Queso de cabra · 2 u.</span><span class="price">4,50 €</span></div>
+      <div class="item"><span class="name">Frikadel</span><span class="price">2 €</span></div>
+      <div class="item"><span class="name">Frikadel especial</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Tempura de berenjena</span><span class="price">4,50 €</span></div>
+      <div class="item"><span class="name">Rebozado de verduras</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Aceitunas</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Patatas · Bolsa</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Almendras</span><span class="price">2 €</span></div>
+      <div class="item"><span class="name">Combo</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Bandidos · fingers de pollo</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Papas fritas con salsa</span><span class="info">Mayonesa · Ketchup · Alioli · Casera · Brava · Tartara · Samuraï · Andaluz (Salsa Extra +0,30)</span><span class="price">5 €</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pizza" class="section">
+  <h2>🍕 Pizzas</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="item"><span class="name">Margarita</span><span class="info">Tomate · Mozzarella · Orégano</span><span class="price">7,50 €</span></div>
+      <div class="item"><span class="name">Jamón</span><span class="info">York · Tomate · Mozzarella</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">Vegetariana</span><span class="info">Mozzarella · Tomate · Pimiento · Cebolla · Aceitunas</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">Atún</span><span class="info">Atún · Anchoas · Cebolla · Aceitunas · Tomate · Mozzarella</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">Diavola</span><span class="info">Tomate · Mozzarella · Chorizo · Aceite picante</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">4 Quesos</span><span class="info">Tomate · Quesos</span><span class="price">8,50 €</span></div>
+    </div>
+
+    <div class="card">
+      <div class="item"><span class="name">Boloñesa</span><span class="info">Tomate · Mozzarella · Salsa boloñesa</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">Pollo</span><span class="info">Pollo · Cebolla caramelizada · Aceitunas · Tomate · Mozzarella</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">Serrano</span><span class="info">Tomate · Mozzarella · Jamón serrano · Parmesano</span><span class="price">8,50 €</span></div>
+      <div class="item"><span class="name">Salmón</span><span class="info">Tomate · Mozzarella · Salmón · Cebolla</span><span class="price">11 €</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="platos" class="section">
+  <h2>🍽️ Platos</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="item"><span class="name">Pechuga de pollo rebozada</span><span class="price">10 €</span></div>
+      <div class="item"><span class="name">Nuggets de pollo</span><span class="price">10 €</span></div>
+      <div class="item"><span class="name">Alitas de pollo</span><span class="price">10 €</span></div>
+      <div class="item"><span class="name">Pollo al estragón</span><span class="info">Tiras de pollo en salsa al estragón</span><span class="price">10 €</span></div>
+      <div class="item"><span class="name">Albóndigas tomate</span><span class="price">12 €</span></div>
+      <div class="item"><span class="name">Albóndigas de Lieja</span><span class="price">12 €</span></div>
+      <div class="item"><span class="name">Frikadel · 2 uds.</span><span class="price">10 €</span></div>
+    </div>
+
+    <div class="card">
+      <div class="item"><span class="name">Lomo</span><span class="price">10 €</span></div>
+      <div class="item"><span class="name">Fish & Chips</span><span class="info">Filete de bacalao rebozado</span><span class="price">13 €</span></div>
+      <div class="item"><span class="name">Calamar a la romana</span><span class="price">12 €</span></div>
+      <div class="item"><span class="name">Gambas</span><span class="info">Colas de gambón a la plancha</span><span class="price">14 €</span></div>
+      <div class="item"><span class="name">Pasta boloñesa</span><span class="price">9 €</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="burgers" class="section">
+  <h2>🍔 Hamburguesas</h2>
+  <p class="desc">Opción sola o completa con papas fritas y ensaladita.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="item"><span class="name">Simple</span><span class="info">Carne + salsa ketchup</span><span class="price">4 / 8 €</span></div>
+      <div class="item"><span class="name">Queso</span><span class="info">Carne + queso + salsa ketchup</span><span class="price">4,5 / 8,5 €</span></div>
+      <div class="item"><span class="name">SAMSAM</span><span class="info">Carne mixta + queso + cebolla caramelizada + lechuga + tomate + salsa casera</span><span class="price">6 / 10 €</span></div>
+      <div class="item"><span class="name">BIKY</span><span class="info">Carne mixta + queso + bacon + cebolla crujiente + salsa BIKY</span><span class="price">6 / 10 €</span></div>
+    </div>
+
+    <div class="card">
+      <div class="item"><span class="name">Pollo</span><span class="info">Pechuga de pollo + queso + cebolla + lechuga + salsa tártara</span><span class="price">6 / 10 €</span></div>
+      <div class="item"><span class="name">Fish</span><span class="info">Filete de bacalao + queso + lechuga + salsa tártara</span><span class="price">7,5 / 11,5 €</span></div>
+      <div class="item"><span class="name">Premium</span><span class="info">Carne de buey + queso + bacon + cebolla caramelizada + lechuga + tomate + salsa casera</span><span class="price">7,50 / 11,5 €</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="wraps" class="section">
+  <h2>🌯 Rollo / Wrap Frio</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="item"><span class="name">Pollo</span><span class="info">Pollo · Zanahoria · Pepino · Pimiento · Tomate · Lechuga · Crema de queso · Salsa César</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Griego</span><span class="info">Pollo · Feta · Aceitunas · Pepino · Tomate · Lechuga · Crema de queso · Salsa César</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Serrano</span><span class="info">Jamón · Parmesano · Tomate · Lechuga · Crema de queso · Crema balsámica</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Salmón</span><span class="info">Salmón · Cebolla · Pepino · Tomate · Lechuga · Crema de queso · Salsa César</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Atún</span><span class="info">Atún · Aceitunas · Cebolla · Tomate · Lechuga · Crema de queso · Mayonesa</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Vegetariano</span><span class="info">Pepino · Pimiento · Zanahoria · Tomate · Lechuga · Aceitunas · Crema de queso · Salsa César</span><span class="price">6 €</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="wraps">
+  <h2>🌯 Rollo / Wrap Caliente</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="item"><span class="name">Pollo</span><span class="info">Pollo · bacon · Pepino · Pimiento · Tomate · Cebolla · Queso fundido</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Carne</span><span class="info">Carne picada · Pimiento · Cebolla · Queso fundido · Tomate · Mozarela</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Serrano</span><span class="info">Jamón · Parmesano · Tomate · Mozarela</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Lomo</span><span class="info">Lomo · Salsa casera · tomate · Queso fundido · Mozrela</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Jamon York</span><span class="info">York · Tomate · Mozarela · Queso fundido</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Atun</span><span class="info">Atun · Cebolla · Tomate · Mozarela · Aceitunas</span><span class="price">6 €</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="bocadillos" class="section">
+  <h2>🥖 Bocadillos</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="item"><span class="name">Jamón serrano</span><span class="info">Serrano · Tomate · Lechuga · Aceite</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Serrano / Parmesano</span><span class="info">Jamón serrano · Parmesano · Lechuga · Tomate · Aceite</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Club</span><span class="info">Jamón York · Queso Gouda · Mayonesa · Lechuga · Tomate · Huevo</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Atún</span><span class="info">Atún · Huevo · Mayonesa · Lechuga</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Calamar</span><span class="info">Calamar a la romana · Alioli</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Salmón</span><span class="info">Crema de queso · Lechuga · Tomate · Cebolla</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Vegetariano</span><span class="info">Tomate · Lechuga · Zanahoria · Pepino · Aceitunas · Salsa César</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Tortilla</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Lomo</span><span class="info">Lomo · Queso · Mayonesa · Lechuga · Tomate</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">El Andrés</span><span class="info">Lomo · Queso · Bacon · Salsa casera</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Pollo</span><span class="info">Pollo rebozado · Lechuga · Salsa tártara</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">El Andaluz</span><span class="info">Tiras de pollo a la plancha · Queso cheddar · Salsa andaluz</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">El Maks</span><span class="info">Carne mixta de hamburguesa · Queso · Cebolla caramelizada · Lechuga · Tomate · Salsa casera</span><span class="price">6 €</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🥪 Sandwich, tostas & panini</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="item"><span class="name">Bikini</span><span class="info">Jamón York · Queso</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Vegetal</span><span class="info">Atún o pollo</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Tosta SAMSAM</span><span class="info">Serrano · Tomate · Mozzarella · Ensaladita</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Tosta Salmón</span><span class="info">Salmón · Cebolla · Tomate · Ensaladita</span><span class="price">6 €</span></div>
+      <div class="item"><span class="name">Tosta TÚNTÚN</span><span class="info">Atún · Mozzarella · Tomate · Ensaladita</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Panini</span><span class="info">Pan de mollete caliente con tomate y mozzarella + 1 ingrediente a elegir: JAMON SERRANO - JAMONN COCIDO - ATUN - CHORIZO - QUESOS - POLLO - LOMO</span><span class="price">6 €</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="postres" class="section">
+  <h2>🍰 Postres & helados</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="item"><span class="name">Coulant de chocolate</span><span class="price">4 €</span></div>
+      <div class="item"><span class="name">Torta Ferrero</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Contesa</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Bizcocho</span><span class="price">2 €</span></div>
+      <div class="item"><span class="name">Gofre · azúcar</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Gofre · nata</span><span class="price">3 €</span></div>
+      <div class="item"><span class="name">Gofre · chocolate</span><span class="price">4 €</span></div>
+      <div class="item"><span class="name">Gofre · helado</span><span class="price">5 €</span></div>
+      <div class="item"><span class="name">Copa de helado · Vainilla</span><span class="price">3,50 €</span></div>
+      <div class="item"><span class="name">Dame Blanche</span><span class="price">5 €</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🍷 Vinos, licores & cervezas</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="item"><span class="name">Vino tinto/blanco/rosado · Copa</span><span class="price">2,50 €</span></div>
+      <div class="item"><span class="name">Vino tinto/blanco/rosado · Botella</span><span class="price">14 €</span></div>
+      <div class="item"><span class="name">Vino sin alcohol · Copa</span><span class="price">3,20 €</span></div>
+      <div class="item"><span class="name">Vino sin alcohol · Botella</span><span class="price">18 €</span></div>
+      <div class="item"><span class="name">Cava · Benjamin</span><span class="price">4 €</span></div>
+      <div class="item"><span class="name">Tinto de verano</span><span class="price">3,20 €</span></div>
+      <div class="item"><span class="name">Brandy / Cognac</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Whisky</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Jack Daniel's</span><span class="price">4,80 €</span></div>
+      <div class="item"><span class="name">Ron</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Vodka</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Baileys</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Vermouth / Martini</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Amaretto</span><span class="price">3,60 €</span></div>
+      <div class="item"><span class="name">Ron Miel</span><span class="price">3,20 €</span></div>
+      <div class="item"><span class="name">Limoncelo</span><span class="price">3,20 €</span></div>
+      <div class="item"><span class="name">Licor de hierbas</span><span class="price">3,20 €</span></div>
+    </div>
+
+    <div class="card">
+      <div class="item"><span class="name">Caña</span><span class="price">1,90 €</span></div>
+      <div class="item"><span class="name">Caña XL</span><span class="price">2,60 €</span></div>
+      <div class="item"><span class="name">Pinta</span><span class="price">3,20 €</span></div>
+      <div class="item"><span class="name">Maestra</span><span class="price">2,80 €</span></div>
+      <div class="item"><span class="name">Pinta Maestra</span><span class="price">4 €</span></div>
+      <div class="item"><span class="name">Mahou 5*</span><span class="price">2,40 €</span></div>
+      <div class="item"><span class="name">Mahou Tostada 0,0</span><span class="price">2,40 €</span></div>
+      <div class="item"><span class="name">Mahou sin gluten</span><span class="price">2,40 €</span></div>
+      <div class="item"><span class="name">Alhambra Verde 1925</span><span class="price">2,90 €</span></div>
+      <div class="item"><span class="name">Alhambra Especial</span><span class="price">2,20 €</span></div>
+      <div class="item"><span class="name">Estrella Levante</span><span class="price">2,20 €</span></div>
+      <div class="item"><span class="name">Estrella Sin</span><span class="price">2,40 €</span></div>
+      <div class="item"><span class="name">Estrella Verna Limón</span><span class="price">2,40 €</span></div>
+      <div class="item"><span class="name">Estrella Levante · Quinto</span><span class="price">1,50 €</span></div>
+      <div class="item"><span class="name">Estrella Levante · Lata 33 cl</span><span class="price">1,90 €</span></div>
+      <div class="item"><span class="name">Jupiler</span><span class="price">2,40 €</span></div>
+      <div class="item"><span class="name">Stella</span><span class="price">2,90 €</span></div>
+      <div class="item"><span class="name">Leffe · Rubia/Negra</span><span class="price">3,90 €</span></div>
+      <div class="item"><span class="name">Grimbergen</span><span class="price">3,90 €</span></div>
+      <div class="item"><span class="name">Duvel</span><span class="price">4,60 €</span></div>
+      <div class="item"><span class="name">Maredsous</span><span class="price">4,60 €</span></div>
+      <div class="item"><span class="name">Kriek Lindemans</span><span class="price">4,40 €</span></div>
+      <div class="item"><span class="name">Fruitesse Liefmans</span><span class="price">4,40 €</span></div>
+      <div class="item"><span class="name">Hoegaarden Rosée</span><span class="price">3,90 €</span></div>
+      <div class="item"><span class="name">Leffe Ruby</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Chouffe</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Chimay Bleu</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Triple Karmeliet</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Rochefort</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Triple Westmalle</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Kwak</span><span class="price">4,90 €</span></div>
+      <div class="item"><span class="name">Orval</span><span class="price">4,90 €</span></div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+</body>
+</html>
+```
